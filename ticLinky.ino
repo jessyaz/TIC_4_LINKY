@@ -269,7 +269,7 @@ void setup() {
   Serial.begin(1200);
   WiFi.begin(wifi_name, wifi_password); // Lancement de la connexion WIFI
   while (WiFi.status() != WL_CONNECTED) { // Test de la connexion WIFI
-    Serial.println("pute pute pute");
+
     delay(500); // On bloque le programme tant que la wifi n'est pas établie.
   }
   MQTTclient.setServer(mqtt_server, mqtt_port); //On set le serveur MQTT, cf lib PubSubClient.h
